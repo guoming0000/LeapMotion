@@ -49,7 +49,7 @@ void SampleListener::onFrame(const Controller& controller) {
   if (images.count() >= 2)
   {
 	  leftMat = Mat(images[0].height(), images[0].width(), CV_8UC1, (void *)images[0].data());
-	  rightMat = Mat(images[1].height(), images[1].width(), CV_8UC1, (void *)images[0].data());
+	  rightMat = Mat(images[1].height(), images[1].width(), CV_8UC1, (void *)images[1].data());
 	  imshow("leftMat", leftMat);
 	  imshow("rightMat", rightMat);
 	  waitKey(1);
